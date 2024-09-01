@@ -18,252 +18,186 @@ Zero-shot techniques have gained prominence in text-to-speech (TTS) synthesis fo
 ![Model Architecture](/assets/pics/overall.png){:width="720px"}
 
 ## Samples
-Spk1
+
+
+
 <table>
   <tr>
     <th>Reference</th>
-    <th><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></th>
-    <th>Text</th>
-    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
-  </tr>
-  <tr>
     <th>X-TTSv2</th>
     <th>VALL-E</th>
     <th>GPT-SoVITS</th>
     <th>CosyVoice</th>
-    <th>muSpeaker</th>
+    <th>$\mu$Speaker</th>
+    <th>$\mu$Speaker w/o DS</th>
   </tr>
   <tr>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
+    <td rowspan="2"><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_ref/s00_ref.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u00_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u00_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u00_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u00_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u00_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u00_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-</table>
-
-
-Spk2
-<table>
-  <tr>
-    <th>Reference</th>
-    <th><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></th>
-    <th>Text</th>
-    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+    <tr>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u01_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u01_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u01_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u01_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u01_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s00_u01_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <th>X-TTSv2</th>
-    <th>VALL-E</th>
-    <th>GPT-SoVITS</th>
-    <th>CosyVoice</th>
-    <th>muSpeaker</th>
+    <tr>
+    <td rowspan="2"><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_ref/s01_ref.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u00_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u00_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u00_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u00_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u00_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u00_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
+    <tr>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u01_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u01_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u01_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u01_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u01_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s01_u01_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-</table>
-
-
-Spk3
-<table>
-  <tr>
-    <th>Reference</th>
-    <th><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></th>
-    <th>Text</th>
-    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+    <tr>
+    <td rowspan="2"><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_ref/s02_ref.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u00_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u00_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u00_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u00_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u00_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u00_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <th>X-TTSv2</th>
-    <th>VALL-E</th>
-    <th>GPT-SoVITS</th>
-    <th>CosyVoice</th>
-    <th>muSpeaker</th>
+    <tr>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u01_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u01_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u01_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u01_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u01_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s02_u01_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
+    <tr>
+    <td rowspan="2"><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_ref/s03_ref.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u00_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u00_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u00_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u00_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u00_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u00_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-</table>
-
-
-Spk4
-<table>
-  <tr>
-    <th>Reference</th>
-    <th><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></th>
-    <th>Text</th>
-    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+    <tr>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u01_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u01_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u01_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u01_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u01_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s03_u01_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <th>X-TTSv2</th>
-    <th>VALL-E</th>
-    <th>GPT-SoVITS</th>
-    <th>CosyVoice</th>
-    <th>muSpeaker</th>
+    <tr>
+    <td rowspan="2"><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_ref/s04_ref.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u00_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u00_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u00_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u00_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u00_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u00_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
+    <tr>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u01_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u01_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u01_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u01_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u01_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s04_u01_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-</table>
-
-
-Spk5
-<table>
-  <tr>
-    <th>Reference</th>
-    <th><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></th>
-    <th>Text</th>
-    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+    <tr>
+    <td rowspan="2"><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_ref/s05_ref.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u00_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u00_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u00_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u00_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u00_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u00_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <th>X-TTSv2</th>
-    <th>VALL-E</th>
-    <th>GPT-SoVITS</th>
-    <th>CosyVoice</th>
-    <th>muSpeaker</th>
+    <tr>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u01_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u01_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u01_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u01_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u01_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s05_u01_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
+    <tr>
+    <td rowspan="2"><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_ref/s06_ref.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u00_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u00_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u00_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u00_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u00_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u00_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-</table>
-
-
-Spk6
-<table>
-  <tr>
-    <th>Reference</th>
-    <th><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></th>
-    <th>Text</th>
-    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+    <tr>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u01_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u01_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u01_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u01_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u01_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s06_u01_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <th>X-TTSv2</th>
-    <th>VALL-E</th>
-    <th>GPT-SoVITS</th>
-    <th>CosyVoice</th>
-    <th>muSpeaker</th>
+    <tr>
+    <td rowspan="2"><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_ref/s07_ref.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u00_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u00_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u00_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u00_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u00_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u00_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
+    <tr>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u01_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u01_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u01_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u01_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u01_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s07_u01_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-</table>
-
-
-Spk7
-<table>
-  <tr>
-    <th>Reference</th>
-    <th><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></th>
-    <th>Text</th>
-    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+    <tr>
+    <td rowspan="2"><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_ref/s08_ref.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u00_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u00_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u00_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u00_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u00_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u00_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <th>X-TTSv2</th>
-    <th>VALL-E</th>
-    <th>GPT-SoVITS</th>
-    <th>CosyVoice</th>
-    <th>muSpeaker</th>
+    <tr>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u01_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u01_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u01_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u01_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u01_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s08_u01_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
+    <tr>
+    <td rowspan="2"><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_ref/s09_ref.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u00_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u00_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u00_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u00_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u00_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u00_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-</table>
-
-
-Spk8
-<table>
-  <tr>
-    <th>Reference</th>
-    <th><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></th>
-    <th>Text</th>
-    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+    <tr>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u01_00.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u01_01.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u01_02.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u01_03.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u01_04.wav'}}" type="audio/mpeg"></audio></td>
+    <td><audio controls style="width: 190px; height:40px;"><source src="{{ '/assets/audio/for_demo/wav_gen/s09_u01_04.wav'}}" type="audio/mpeg"></audio></td>
   </tr>
-  <tr>
-    <th>X-TTSv2</th>
-    <th>VALL-E</th>
-    <th>GPT-SoVITS</th>
-    <th>CosyVoice</th>
-    <th>muSpeaker</th>
-  </tr>
-  <tr>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-  </tr>
-</table>
-
-
-Spk9
-<table>
-  <tr>
-    <th>Reference</th>
-    <th><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></th>
-    <th>Text</th>
-    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
-  </tr>
-  <tr>
-    <th>X-TTSv2</th>
-    <th>VALL-E</th>
-    <th>GPT-SoVITS</th>
-    <th>CosyVoice</th>
-    <th>muSpeaker</th>
-  </tr>
-  <tr>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-  </tr>
-</table>
-
-
-Spk10
-<table>
-  <tr>
-    <th>Reference</th>
-    <th><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></th>
-    <th>Text</th>
-    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
-  </tr>
-  <tr>
-    <th>X-TTSv2</th>
-    <th>VALL-E</th>
-    <th>GPT-SoVITS</th>
-    <th>CosyVoice</th>
-    <th>muSpeaker</th>
-  </tr>
-  <tr>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-    <td><audio controls style="width: 220px; height:40px;"><source src="{{ '/assets/audio/000014.mp3'}}" type="audio/mpeg"></audio></td>
-  </tr>
-</table>
-

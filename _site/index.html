@@ -20,7 +20,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=2">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="/assets/css/style.css?v=">
@@ -57,42 +57,252 @@
 <p>Zero-shot techniques have gained prominence in text-to-speech (TTS) synthesis for their ability to generate speech in unseen speakers’ voices without model retraining. However, existing approaches struggle with effective disentanglement of speaker-related information from content, resulting in models heavily dependent on large datasets and high parameter counts to ensure adequate performance and generalizability. This paper introduces $\mu$Speaker, a novel zero-shot voice synthesis architecture that prioritizes efficiency, stability, and enhanced control capabilities. Our model features a compact, zero-shot multi-speaker framework achieving real-time performance on CPU devices, significantly reducing computational overhead while maintaining high output quality. We implement an advanced self-distillation strategy leveraging shared structural features to enhance feature decoupling and improve generalization. Extensive objective and subjective evaluations demonstrate that $\mu$Speaker outperforms existing baseline models in voice similarity and robustness across diverse speaker profiles, while exhibiting exceptional efficiency.</p>
 
 <h2 id="model-architecture">Model Architecture</h2>
-<p><img src="/assets/pics/model_arch.png" alt="Model Architecture" /></p>
+<p><img src="/assets/pics/model_arch.png" alt="Model Architecture" width="420px" /></p>
+
 <h2 id="two-stage-self-distillation-training-strategy">Two-Stage Self-distillation Training Strategy</h2>
+<p><img src="/assets/pics/overall.png" alt="Model Architecture" width="720px" /></p>
 
 <h2 id="samples">Samples</h2>
-
+<p>Spk1</p>
 <table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Reference</th>
-      <th style="text-align: left">Vall-E</th>
-      <th style="text-align: left">GPT-SoVITS</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good swedish fish</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">out of stock</td>
-      <td style="text-align: left">good and plenty</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="language-plaintext highlighter-rouge">oreos</code></td>
-      <td style="text-align: left">hmm</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="language-plaintext highlighter-rouge">zoute</code> drop</td>
-      <td style="text-align: left">yumm</td>
-    </tr>
-  </tbody>
+  <tr>
+    <th>Reference</th>
+    <th><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></th>
+    <th>Text</th>
+    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+  </tr>
+  <tr>
+    <th>X-TTSv2</th>
+    <th>VALL-E</th>
+    <th>GPT-SoVITS</th>
+    <th>CosyVoice</th>
+    <th>muSpeaker</th>
+  </tr>
+  <tr>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+  </tr>
 </table>
+
+<p>Spk2</p>
+<table>
+  <tr>
+    <th>Reference</th>
+    <th><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></th>
+    <th>Text</th>
+    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+  </tr>
+  <tr>
+    <th>X-TTSv2</th>
+    <th>VALL-E</th>
+    <th>GPT-SoVITS</th>
+    <th>CosyVoice</th>
+    <th>muSpeaker</th>
+  </tr>
+  <tr>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+  </tr>
+</table>
+
+<p>Spk3</p>
+<table>
+  <tr>
+    <th>Reference</th>
+    <th><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></th>
+    <th>Text</th>
+    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+  </tr>
+  <tr>
+    <th>X-TTSv2</th>
+    <th>VALL-E</th>
+    <th>GPT-SoVITS</th>
+    <th>CosyVoice</th>
+    <th>muSpeaker</th>
+  </tr>
+  <tr>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+  </tr>
+</table>
+
+<p>Spk4</p>
+<table>
+  <tr>
+    <th>Reference</th>
+    <th><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></th>
+    <th>Text</th>
+    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+  </tr>
+  <tr>
+    <th>X-TTSv2</th>
+    <th>VALL-E</th>
+    <th>GPT-SoVITS</th>
+    <th>CosyVoice</th>
+    <th>muSpeaker</th>
+  </tr>
+  <tr>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+  </tr>
+</table>
+
+<p>Spk5</p>
+<table>
+  <tr>
+    <th>Reference</th>
+    <th><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></th>
+    <th>Text</th>
+    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+  </tr>
+  <tr>
+    <th>X-TTSv2</th>
+    <th>VALL-E</th>
+    <th>GPT-SoVITS</th>
+    <th>CosyVoice</th>
+    <th>muSpeaker</th>
+  </tr>
+  <tr>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+  </tr>
+</table>
+
+<p>Spk6</p>
+<table>
+  <tr>
+    <th>Reference</th>
+    <th><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></th>
+    <th>Text</th>
+    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+  </tr>
+  <tr>
+    <th>X-TTSv2</th>
+    <th>VALL-E</th>
+    <th>GPT-SoVITS</th>
+    <th>CosyVoice</th>
+    <th>muSpeaker</th>
+  </tr>
+  <tr>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+  </tr>
+</table>
+
+<p>Spk7</p>
+<table>
+  <tr>
+    <th>Reference</th>
+    <th><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></th>
+    <th>Text</th>
+    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+  </tr>
+  <tr>
+    <th>X-TTSv2</th>
+    <th>VALL-E</th>
+    <th>GPT-SoVITS</th>
+    <th>CosyVoice</th>
+    <th>muSpeaker</th>
+  </tr>
+  <tr>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+  </tr>
+</table>
+
+<p>Spk8</p>
+<table>
+  <tr>
+    <th>Reference</th>
+    <th><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></th>
+    <th>Text</th>
+    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+  </tr>
+  <tr>
+    <th>X-TTSv2</th>
+    <th>VALL-E</th>
+    <th>GPT-SoVITS</th>
+    <th>CosyVoice</th>
+    <th>muSpeaker</th>
+  </tr>
+  <tr>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+  </tr>
+</table>
+
+<p>Spk9</p>
+<table>
+  <tr>
+    <th>Reference</th>
+    <th><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></th>
+    <th>Text</th>
+    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+  </tr>
+  <tr>
+    <th>X-TTSv2</th>
+    <th>VALL-E</th>
+    <th>GPT-SoVITS</th>
+    <th>CosyVoice</th>
+    <th>muSpeaker</th>
+  </tr>
+  <tr>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+  </tr>
+</table>
+
+<p>Spk10</p>
+<table>
+  <tr>
+    <th>Reference</th>
+    <th><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></th>
+    <th>Text</th>
+    <td colspan="2">xsxsxsxsxs xsxs xsxs sxsxs xsxsxs xsxssx</td> 
+  </tr>
+  <tr>
+    <th>X-TTSv2</th>
+    <th>VALL-E</th>
+    <th>GPT-SoVITS</th>
+    <th>CosyVoice</th>
+    <th>muSpeaker</th>
+  </tr>
+  <tr>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" style="width: 220px; height:40px;"><source src="/assets/audio/000014.mp3" type="audio/mpeg" /></audio></td>
+  </tr>
+</table>
+
 
 
       <footer class="site-footer">

@@ -2,6 +2,9 @@
 layout: default
 ---
 
+# Resource-efficient zero-shot TTS
+This is the demo page for $\mu$Speaker proposed in the paper “Resource-Efficient Zero-Shot Multi-speaker TTS via Self-Distillation”.
+
 ## Abstract
 Zero-shot text-to-speech(TTS) synthesis have gained prominence for the ability to generate speech in the voices of novel speakers without the need for model retraining. Such convienient capability pushes voice imitation a more potential business model applicable across various fields. However, current methods for achieving zero-shot capabilities heavily rely on large model scales and extensive training datasets to ensure satisfactory performance and generalization across various speakers, raising concerns about both deployment costs and data security. In this paper, we present a resource-efficient zero-shot multi-speaker TTS system. We model speaker attributes in multi-level representations, i.e., global timbre and temporal style, that correspond to the target speaker, thereby circumventing the need for learning intricate mappings from extensive datasets. We introduce multi-level speaker feature modeling to explicitly infer key speech attributes, i.e., global timbre and temporal style, that correspond to the target speaker, thereby circumventing the need for learning intricate mappings from extensive datasets. Building on this lightweight model, we further devise a self-distillation training strategy that leverages the initial multi-speaker generation capabilities of a teacher TTS model to create parallel data pairs for model distillation, thus effectively decoupling linguistic content and speaker attributes from data aspect and enhancing the model's capacity to learn robust speaker representations. Both objective and subjective experiments show that our system matches the baseline in zero-shot speech synthesis performance while achieving superior computational efficiency, with RTFs of *0.15* and *0.012* on CPU and GPU, respectively.
 

@@ -1,5 +1,5 @@
 title: Resource-efficient zero-shot TTS 
-description: This is the demo page for the paper “Resource-Efficient Zero-Shot Multi-speaker TTS via Self-Distillation”.
+description: Resource-Efficient Zero-Shot Multi-speaker TTS via Self-Distillation
 show_downloads: false
 google_analytics:
 mathjax: # true

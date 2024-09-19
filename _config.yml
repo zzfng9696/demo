@@ -1,5 +1,5 @@
-title: Resource-efficient zero-shot TTS 
-description: Resource-Efficient Zero-Shot Multi-speaker TTS via Self-Distillation
+title: "Demo Page"
+description: "Towards Lightweight and Stable Zero-shot TTS with Self-distilled Representation Disentanglement (ICASSP Paper ID: 0708)"
 show_downloads: false
 google_analytics:
 mathjax: # true

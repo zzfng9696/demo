@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Resource-efficient zero-shot TTS | Resource-Efficient Zero-Shot Multi-speaker TTS via Self-Distillation</title>
+<title>Demo Page | Towards Lightweight and Stable Zero-shot TTS with Self-distilled Representation Disentanglement (ICASSP Paper ID: 0708)</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Resource-efficient zero-shot TTS" />
+<meta property="og:title" content="Demo Page" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Resource-Efficient Zero-Shot Multi-speaker TTS via Self-Distillation" />
-<meta property="og:description" content="Resource-Efficient Zero-Shot Multi-speaker TTS via Self-Distillation" />
+<meta name="description" content="Towards Lightweight and Stable Zero-shot TTS with Self-distilled Representation Disentanglement (ICASSP Paper ID: 0708)" />
+<meta property="og:description" content="Towards Lightweight and Stable Zero-shot TTS with Self-distilled Representation Disentanglement (ICASSP Paper ID: 0708)" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Resource-efficient zero-shot TTS" />
+<meta property="og:site_name" content="Demo Page" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Resource-efficient zero-shot TTS" />
+<meta property="twitter:title" content="Demo Page" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Resource-Efficient Zero-Shot Multi-speaker TTS via Self-Distillation","headline":"Resource-efficient zero-shot TTS","name":"Resource-efficient zero-shot TTS","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Towards Lightweight and Stable Zero-shot TTS with Self-distilled Representation Disentanglement (ICASSP Paper ID: 0708)","headline":"Demo Page","name":"Demo Page","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -45,18 +45,19 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">Resource-efficient zero-shot TTS</h1>
-      <h2 class="project-tagline">Resource-Efficient Zero-Shot Multi-speaker TTS via Self-Distillation</h2>
+      <h1 class="project-name">Demo Page</h1>
+      <h2 class="project-tagline">Towards Lightweight and Stable Zero-shot TTS with Self-distilled Representation Disentanglement (ICASSP Paper ID: 0708)</h2>
       
       
     </header>
 
     <main id="content" class="main-content" role="main">
-      <h1 id="resource-efficient-zero-shot-tts">Resource-efficient zero-shot TTS</h1>
-<p>This is the demo page for $\mu$Speaker proposed in the paper “Resource-Efficient Zero-Shot Multi-speaker TTS via Self-Distillation”.</p>
+      <!-- 
+# Lightweight and Stable Zero-shot TTS
+This is the demo page for the paper *Towards Lightweight and Stable Zero-shot TTS with Self-distilled Representation Disentanglement* (ICASSP Paper ID: 0708). -->
 
-<h2 id="abstract">Abstract</h2>
-<p>Zero-shot text-to-speech(TTS) synthesis have gained prominence for the ability to generate speech in the voices of novel speakers without the need for model retraining. Such convienient capability pushes voice imitation a more potential business model applicable across various fields. However, current methods for achieving zero-shot capabilities heavily rely on large model scales and extensive training datasets to ensure satisfactory performance and generalization across various speakers, raising concerns about both deployment costs and data security. In this paper, we present a resource-efficient zero-shot multi-speaker TTS system. We model speaker attributes in multi-level representations, i.e., global timbre and temporal style, that correspond to the target speaker, thereby circumventing the need for learning intricate mappings from extensive datasets. We introduce multi-level speaker feature modeling to explicitly infer key speech attributes, i.e., global timbre and temporal style, that correspond to the target speaker, thereby circumventing the need for learning intricate mappings from extensive datasets. Building on this lightweight model, we further devise a self-distillation training strategy that leverages the initial multi-speaker generation capabilities of a teacher TTS model to create parallel data pairs for model distillation, thus effectively decoupling linguistic content and speaker attributes from data aspect and enhancing the model’s capacity to learn robust speaker representations. Both objective and subjective experiments show that our system matches the baseline in zero-shot speech synthesis performance while achieving superior computational efficiency, with RTFs of <em>0.15</em> and <em>0.012</em> on CPU and GPU, respectively.</p>
+<h1 id="abstract">Abstract</h1>
+<p>Zero-shot Text-To-Speech (TTS) synthesis shows great promise for personalized voice customization through voice cloning. However, current methods for achieving zero-shot TTS heavily rely on large model scales and extensive training datasets to ensure satisfactory performance and generalizability across various speakers. This raises concerns regarding both deployment costs and data security. In this paper, we present a lightweight and stable zero-shot TTS system. We introduce a novel TTS architecture designed to effectively model linguistic content and various speaker attributes from source speech and prompt speech, respectively. Furthermore, we present a two-stage self-distillation framework that constructs parallel data pairs for effectively disentangling linguistic content and speakers from the perspective of training data. Extensive experiments show that our system exhibits excellent performance and superior stability on the zero-shot TTS tasks. Moreover, it shows markedly superior computational efficiency, with RTFs of 0.13 and 0.012 on the CPU and GPU, respectively.</p>
 
 <h2 id="tts-systems">TTS Systems</h2>
 <p>Our proposed model was benchmarked against state-of-the-art zero-shot TTS models, including X-TTSv2, Vall-E, GPT-SoVITS and CosyVoice. We reproduced Vall-E based on the paper and pre-trained it on around 60,000 hours of speech corpus. X-TTSv2, GPT-SoVITS and CosyVoice are the official models provided by the respective authors, which are pretrained on common open-source data.</p>
@@ -110,8 +111,8 @@
   </tbody>
 </table>
 
-<h2 id="zero-shot-audio-samples">Zero-shot Audio Samples</h2>
-<p>The following examples include synthesized speech generated using prompt speeches from multiple speakers not included in the training dataset. For each prompt speech, we produced two sets of audios, each containing six clips generated by different TTS systems. Among these, <strong>$\mu$Speaker w/o SD</strong> and <strong>$\mu$Speaker w/ SD</strong> respectively denote the model without self-distillation (where $\sigma=0$) and with self-distillation (where $\sigma=0.8$) applied.</p>
+<h1 id="zero-shot-audio-samples">Zero-shot Audio Samples</h1>
+<p>The following examples include synthesized speech generated using prompt speeches from multiple speakers not included in the training dataset. For each prompt speech, we produced two sets of audios, each containing six clips generated by different TTS systems. Among these, <strong>our system w/o SD</strong> and <strong>our system w/ SD</strong> respectively denote the model without self-distillation (where $\sigma=0$) and with self-distillation (where $\sigma=0.8$) applied.</p>
 
 <table>
   <tr>
@@ -120,8 +121,8 @@
     <th>VALL-E</th>
     <th>GPT-SoVITS</th>
     <th>CosyVoice</th>
-    <th>$\mu$Speaker w/o SD</th>
-    <th>$\mu$Speaker w/ SD</th>
+    <th>Our system w/o SD</th>
+    <th>Ours system w/ SD</th>
   </tr>
   <tr>
     <td rowspan="2"><audio src="/assets/audio/for_demo/wav_ref/s00_ref.wav" controls="" preload="" style="width: 150px; height:40px;"> </audio></td>
@@ -130,7 +131,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u00_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u00_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u00_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u00_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u00_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u01_00.wav" type="audio/mpeg" /></audio></td>
@@ -138,7 +139,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u01_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u01_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u01_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u01_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s00_u01_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td rowspan="2"><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_ref/s01_ref.wav" type="audio/mpeg" /></audio></td>
@@ -147,7 +148,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u00_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u00_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u00_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u00_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u00_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u01_00.wav" type="audio/mpeg" /></audio></td>
@@ -155,7 +156,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u01_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u01_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u01_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u01_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s01_u01_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td rowspan="2"><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_ref/s02_ref.wav" type="audio/mpeg" /></audio></td>
@@ -164,7 +165,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u00_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u00_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u00_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u00_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u00_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u01_00.wav" type="audio/mpeg" /></audio></td>
@@ -172,7 +173,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u01_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u01_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u01_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u01_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s02_u01_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td rowspan="2"><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_ref/s03_ref.wav" type="audio/mpeg" /></audio></td>
@@ -181,7 +182,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u00_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u00_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u00_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u00_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u00_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u01_00.wav" type="audio/mpeg" /></audio></td>
@@ -189,7 +190,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u01_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u01_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u01_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u01_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s03_u01_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td rowspan="2"><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_ref/s04_ref.wav" type="audio/mpeg" /></audio></td>
@@ -198,7 +199,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u00_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u00_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u00_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u00_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u00_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u01_00.wav" type="audio/mpeg" /></audio></td>
@@ -206,7 +207,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u01_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u01_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u01_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u01_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s04_u01_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td rowspan="2"><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_ref/s05_ref.wav" type="audio/mpeg" /></audio></td>
@@ -215,7 +216,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u00_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u00_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u00_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u00_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u00_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u01_00.wav" type="audio/mpeg" /></audio></td>
@@ -223,7 +224,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u01_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u01_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u01_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u01_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s05_u01_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td rowspan="2"><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_ref/s06_ref.wav" type="audio/mpeg" /></audio></td>
@@ -232,7 +233,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u00_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u00_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u00_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u00_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u00_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u01_00.wav" type="audio/mpeg" /></audio></td>
@@ -240,7 +241,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u01_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u01_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u01_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u01_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s06_u01_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td rowspan="2"><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_ref/s07_ref.wav" type="audio/mpeg" /></audio></td>
@@ -249,7 +250,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u00_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u00_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u00_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u00_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u00_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u01_00.wav" type="audio/mpeg" /></audio></td>
@@ -257,7 +258,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u01_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u01_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u01_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u01_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s07_u01_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td rowspan="2"><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_ref/s08_ref.wav" type="audio/mpeg" /></audio></td>
@@ -266,7 +267,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u00_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u00_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u00_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u00_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u00_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u01_00.wav" type="audio/mpeg" /></audio></td>
@@ -274,7 +275,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u01_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u01_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u01_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u01_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s08_u01_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td rowspan="2"><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_ref/s09_ref.wav" type="audio/mpeg" /></audio></td>
@@ -283,7 +284,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u00_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u00_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u00_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u00_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u00_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
     <tr>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u01_00.wav" type="audio/mpeg" /></audio></td>
@@ -291,7 +292,7 @@
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u01_02.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u01_03.wav" type="audio/mpeg" /></audio></td>
     <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u01_04.wav" type="audio/mpeg" /></audio></td>
-    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u01_04.wav" type="audio/mpeg" /></audio></td>
+    <td><audio controls="" preload="" style="width: 150px; height:40px;"><source src="/assets/audio/for_demo/wav_gen/s09_u01_05.wav" type="audio/mpeg" /></audio></td>
   </tr>
 </table>
 
